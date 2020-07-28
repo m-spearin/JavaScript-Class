@@ -4,7 +4,8 @@ function Add_numbers_1() {
 
 }
 function Add_numbers_2() {
-    document.write(X + 100);
+    var Y = 100;
+    document.write(X + Y);
 
 }
 Add_numbers_1();
