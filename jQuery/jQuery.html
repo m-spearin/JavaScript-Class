@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Intro</title>
+    <!-- Code to download the jQuery Libary-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+</head>
+
+    <script>
+        //Checking to make sure the page is loaded
+        $(document).ready(function(){
+           //When document is loaded, it exucutes the fallowing functions. Code is to add HTML to the body of the website.  
+            $("html").append(
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1 id='0'>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+                </body>"    
+
+
+            );
+
+            // Changing the font of the 2nd Paragraph
+            $("#2").css({"color":"red"});
+            // Hiding the h1 when clicking on the 3rd Paragraph
+            $("#3").click(function() {
+                $('h1').hide();
+            });
+            // Adding notes to the console when clicking on Paragraph 1
+            $("#1").click(function() {
+                console.log("You clicked on Paragraph 1!")
+            });
+            // Slowly hides H1 when Paragraph 2 is clicked
+            $("#0").click(function() {
+                $('#2').hide("slow");
+            });
+        });
+
+
+    </script>
+
+
+
+
+
+
+
+
+</html>
