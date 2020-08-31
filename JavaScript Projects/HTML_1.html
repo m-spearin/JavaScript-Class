@@ -35,5 +35,26 @@
     
     <canvas id="myCanvas2" width="500" height="250" style="border:2px solid black;"></canvas>
 
+    <p>Here we are going to make a box move up and down!</p>
+
+    <style>
+        #MoveME {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            position: relative;
+            animation: mymove 5s infinite;
+
+        }
+
+        @keyframes mymove {
+            from {top: 0px;}
+            to {top: 200px;}
+        }
+
+    </style>
+
+    <div id="MoveME"></div>
+    
 </body>
 </html>
