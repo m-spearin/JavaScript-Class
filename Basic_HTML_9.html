@@ -7,6 +7,7 @@
     <link rel="stylesheet" href=".//CSS/Basic_CSS_1.css">
 </head>
 <body>
+  <script>document.body.className += ' fade-out';</script>
     <p>How many seconds would you like to set your alarm for?</p>
     <input id="seconds" value="" />
     <button onclick="countdown()">Click Here</button>
@@ -46,9 +47,14 @@
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
+<script>
 
-
+$(function() {
+  $('body').removeClass('fade-out');
+});
+</script>
 
 </body>
 </html>
