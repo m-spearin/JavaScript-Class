@@ -25,9 +25,5 @@ function validateForm () {
     }else alert("Thank you very much for submitting the form. We will be in touch shortly!");
 
 
-
-
-
-
 }
 
